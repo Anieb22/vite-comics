@@ -4,6 +4,17 @@ export default {
 }
 </script>
 <template>
-    <h1>MAIN</h1>
+    <main>
+        <h1>Content here>></h1>
+    </main>
 </template>
-<style></style>
+<style lang="scss" scoped>
+main {
+    height: 100px;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+</style>
