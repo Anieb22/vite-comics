@@ -64,7 +64,7 @@ ul {
 }
 
 li {
-    margin-left: 20pt;
+    margin: 20pt;
     list-style-type: none;
     color: white;
 }
@@ -75,6 +75,7 @@ a {
 }
 
 img {
-    width: 70px;
+    margin-right: 10px;
+    width: 50px;
 }
 </style>
