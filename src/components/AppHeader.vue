@@ -82,8 +82,6 @@ export default {
   </header>
 </template>
 <style lang="scss" scoped>
-@use "src/style/generals.scss" as *;
-
 header {
   background-color: white;
 }
