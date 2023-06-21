@@ -50,7 +50,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 .background-blue {
-    background-color: blue;
+    background-color: #0282F9;
     height: 200px;
     align-items: center;
     display: flex;
@@ -61,6 +61,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 li {
@@ -71,6 +72,7 @@ li {
 a {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 img {

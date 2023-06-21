@@ -185,7 +185,7 @@ export default {
         </ul>
     </div>
 </template>
-<style>
+<style lang="scss" scoped>
 .container-ul {
     width: 40%;
     display: flex;
@@ -213,7 +213,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: blue;
+    color: #0282F9;
 }
 
 img {
@@ -224,6 +224,11 @@ ul {
     text-align: left;
     font-weight: 800;
     color: white;
+}
+
+a {
+    font-weight: 100;
+    color: lightgray;
 }
 
 button {

@@ -104,8 +104,16 @@ li {
 
   & .active,
   & :hover {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid #0282F9;
   }
 
+}
+
+a {
+  color: black;
+
+  & :hover {
+    color: #0282F9;
+  }
 }
 </style>
