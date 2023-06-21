@@ -108,6 +108,7 @@ li {
   & .active,
   & :hover {
     border-bottom: 4px solid #0282F9;
+    color: #0282F9;
   }
 
 }
