@@ -13,6 +13,24 @@ ul li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #0282F9;
+}
+
+.background-blue a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
 img {
     max-width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
 }

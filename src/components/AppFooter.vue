@@ -141,49 +141,55 @@ export default {
 }
 </script>
 <template>
-    <div class="container-footer">
-        <div class="container-ul">
-            <ul> DC COMICS
-                <li v-for="(link, index) in DcComics" :key="index">
-                    <a :href="link.url">
-                        {{ link.text }}
-                    </a>
-                </li>
-                <ul> SHOP
-                    <li v-for="(link, index) in Shop" :key="index">
+    <footer>
+        <div class="container-footer container">
+            <div class="container-ul">
+                <ul> DC COMICS
+                    <li v-for="(link, index) in DcComics" :key="index">
+                        <a :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                    <ul> SHOP
+                        <li v-for="(link, index) in Shop" :key="index">
+                            <a :href="link.url">
+                                {{ link.text }}
+                            </a>
+                        </li>
+                    </ul>
+
+                </ul>
+                <ul> DC
+                    <li v-for="(link, index) in Dc" :key="index">
                         <a :href="link.url">
                             {{ link.text }}
                         </a>
                     </li>
                 </ul>
-
-            </ul>
-            <ul> DC
-                <li v-for="(link, index) in Dc" :key="index">
-                    <a :href="link.url">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-            <ul> SITES
-                <li v-for="(link, index) in Sites" :key="index">
-                    <a :href="link.url">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
+                <ul> SITES
+                    <li v-for="(link, index) in Sites" :key="index">
+                        <a :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="container-footer2">
-        <button>SING-UP NOW</button>
-        <ul class="social"> FOLLOW US
-            <li v-for="(link, index) in Social" :key="index">
-                <a :href="link.url">
-                    <img :src="link.img" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
+        <div class="background-footer">
+            <div class="container container-footer2">
+                <button>
+                    <h3>SING-UP NOW</h3>
+                </button>
+                <ul class="social"> FOLLOW US
+                    <li v-for="(link, index) in Social" :key="index">
+                        <a :href="link.url">
+                            <img :src="link.img" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </template>
 <style lang="scss" scoped>
 .container-ul {
@@ -193,20 +199,27 @@ export default {
     justify-content: space-between;
 }
 
-.container-footer {
-    height: 350px;
+footer {
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
+
+}
+
+.container-footer {
+    height: 350px;
     display: flex;
     align-items: center;
 }
 
 .container-footer2 {
-    background-color: rgb(54, 54, 54);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.background-footer {
+    background-color: rgb(54, 54, 54);
 }
 
 .social {
@@ -232,6 +245,10 @@ a {
 }
 
 button {
-    margin: 20px;
+    margin: 30px 0;
+    background-color: rgb(54, 54, 54);
+    border: 1px solid #0282F9;
+    padding: 10px;
+    color: white;
 }
 </style>

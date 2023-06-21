@@ -63,7 +63,7 @@ export default {
 </script>
 <template>
   <header>
-    <div class="container-header">
+    <div class="container-header container">
 
       <a href="#" class="logo">
         <img :src="logo" alt="logo">
@@ -82,12 +82,17 @@ export default {
   </header>
 </template>
 <style lang="scss" scoped>
+@use "src/style/generals.scss" as *;
+
+header {
+  background-color: white;
+}
+
 .container-header {
   height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
 }
 
 ul {

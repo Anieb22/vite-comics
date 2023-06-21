@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <main>
-        <h3>Content here>></h3>
+        <h3 class="container">Content here>></h3>
     </main>
 </template>
 <style lang="scss" scoped>

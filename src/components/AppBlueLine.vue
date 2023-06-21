@@ -37,15 +37,16 @@ export default {
 </script>
 <template>
     <div class="background-blue">
-        <ul>
-            <li v-for="(link, index) in links" :key="index">
-                <a :href="link.url">
-                    <img :src="link.Img" alt="image">
-                    {{ link.text }}
-                </a>
-            </li>
-        </ul>
-
+        <div class="container">
+            <ul>
+                <li v-for="(link, index) in links" :key="index">
+                    <a :href="link.url">
+                        <img :src="link.Img" alt="image">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
