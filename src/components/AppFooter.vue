@@ -221,7 +221,6 @@ img {
 }
 
 ul {
-    list-style-type: none;
     text-align: left;
     font-weight: 800;
     color: white;

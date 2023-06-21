@@ -65,7 +65,6 @@ ul {
 
 li {
     margin: 20pt;
-    list-style-type: none;
     color: white;
 }
 

@@ -101,13 +101,8 @@ ul {
 
 li {
   margin-left: 20pt;
-  list-style-type: none;
-  color: black;
 
-  & .active {
-    border-bottom: 4px solid blue;
-  }
-
+  & .active,
   & :hover {
     border-bottom: 4px solid blue;
   }

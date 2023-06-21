@@ -19,14 +19,6 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(36, 36, 36);
-}
+<style lang="scss">
+@use "src/style/generals.scss" as *;
 </style>
