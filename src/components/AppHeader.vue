@@ -71,8 +71,8 @@ export default {
 
       <nav>
         <ul>
-          <li v-for="(link, index) in links" :key="index">
-            <a :href="link.url" :class="{ active: link.current }">
+          <li v-for="(link, index) in  links " :key="index">
+            <a :href="link.url" :class="{ active: link.current }" class="linea-blu">
               {{ link.text }}
             </a>
           </li>
@@ -95,8 +95,22 @@ ul {
   flex-direction: row;
 }
 
+.linea-blu {
+  padding-bottom: 60px;
+}
+
 li {
   margin-left: 20pt;
   list-style-type: none;
+  color: black;
+
+  & .active {
+    border-bottom: 4px solid blue;
+  }
+
+  & :hover {
+    border-bottom: 4px solid blue;
+  }
+
 }
 </style>
