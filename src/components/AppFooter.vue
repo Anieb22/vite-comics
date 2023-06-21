@@ -202,6 +202,7 @@ export default {
 footer {
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
+    background-size: cover;
 
 }
 
