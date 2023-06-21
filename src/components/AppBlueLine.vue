@@ -37,7 +37,7 @@ export default {
 </script>
 <template>
     <div class="background-blue">
-        <div class="container">
+        <div class="container d-flex justify-content-between">
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a :href="link.url">
@@ -66,7 +66,6 @@ ul {
 }
 
 li {
-    margin: 20pt;
     color: white;
 }
 
