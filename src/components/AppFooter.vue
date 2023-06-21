@@ -113,6 +113,28 @@ export default {
                     text: "DC Power Visa",
                     url: "#",
                 }
+            ],
+            Social: [
+                {
+                    img: "src/assets/img/footer-facebook.png",
+                    url: "#",
+                },
+                {
+                    img: "src/assets/img/footer-periscope.png",
+                    url: "#",
+                },
+                {
+                    img: "src/assets/img/footer-pinterest.png",
+                    url: "#",
+                },
+                {
+                    img: "src/assets/img/footer-twitter.png",
+                    url: "#",
+                },
+                {
+                    img: "src/assets/img/footer-youtube.png",
+                    url: "#",
+                }
             ]
         }
     }
@@ -152,12 +174,23 @@ export default {
             </ul>
         </div>
     </div>
+    <div class="container-footer2">
+        <button>SING-UP NOW</button>
+        <ul class="social"> FOLLOW US
+            <li v-for="(link, index) in Social" :key="index">
+                <a :href="link.url">
+                    <img :src="link.img" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
 </template>
 <style>
 .container-ul {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .container-footer {
@@ -168,10 +201,33 @@ export default {
     align-items: center;
 }
 
+.container-footer2 {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+}
+
+img {
+    margin-left: 10px;
+}
+
 ul {
     list-style-type: none;
     text-align: left;
     font-weight: 800;
     color: white;
+}
+
+button {
+    margin: 20px;
 }
 </style>

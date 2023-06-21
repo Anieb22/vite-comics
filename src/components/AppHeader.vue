@@ -63,14 +63,12 @@ export default {
 </script>
 <template>
   <header>
-    <div class="container">
+    <div class="container-header">
 
-      <!-- logo -->
       <a href="#" class="logo">
         <img :src="logo" alt="logo">
       </a>
 
-      <!-- nav bar -->
       <nav>
         <ul>
           <li v-for="(link, index) in links" :key="index">
@@ -84,12 +82,12 @@ export default {
   </header>
 </template>
 <style lang="scss" scoped>
-.container {
-  width: 1200px;
+.container-header {
   height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 ul {

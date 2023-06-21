@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <main>
-        <h1>Content here>></h1>
+        <h3>Content here>></h3>
     </main>
 </template>
 <style lang="scss" scoped>
@@ -14,7 +14,7 @@ main {
     background-color: black;
 }
 
-h1 {
+h3 {
     color: white;
 }
 </style>
