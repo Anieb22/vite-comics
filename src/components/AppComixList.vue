@@ -4,7 +4,7 @@ export default {
         image: String,
         title: String,
         price: String,
-        type: String,
+        type: tring,
 
     }
 }
@@ -20,6 +20,18 @@ export default {
                     </div>
     </div>
 </template>
-<style lang="">
-    
+<style lang="scss">
+h3,
+h5 {
+    color: white;
+}
+
+.card {
+    width: calc(100% / 6 - 20px);
+    margin: 10px 0;
+}
+
+img {
+    width: 60%;
+}
 </style>

@@ -1,6 +1,9 @@
 <script>
 import AppComixList from './AppComixList.vue'
 export default {
+    components: {
+        AppComixList
+    },
     data() {
         return {
             Comix: [
@@ -99,25 +102,11 @@ export default {
     </main>
 </template>
 <style lang="scss" scoped>
-h3,
-h5 {
-    color: white;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 90px 0;
-}
-
-.card {
-    width: calc(100% / 6 - 20px);
-    margin: 10px 0;
-}
-
-img {
-    width: 60%;
 }
 
 button {
