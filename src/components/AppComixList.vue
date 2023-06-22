@@ -4,7 +4,7 @@ export default {
         image: String,
         title: String,
         price: String,
-        type: tring,
+        type: String,
 
     }
 }
@@ -29,9 +29,16 @@ h5 {
 .card {
     width: calc(100% / 6 - 20px);
     margin: 10px 0;
+
 }
 
 img {
     width: 60%;
+}
+
+.card-img-top:hover {
+    border: 2px solid white;
+    cursor: pointer;
+
 }
 </style>
