@@ -1,10 +1,10 @@
 <script>
 export default {
     props: {
-        image: string,
-        title: string,
-        price: string,
-        type: string,
+        image: String,
+        title: String,
+        price: String,
+        type: String,
 
     }
 }
