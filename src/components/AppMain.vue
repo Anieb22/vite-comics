@@ -1,4 +1,5 @@
 <script>
+import AppComixList from './AppComixList.vue'
 export default {
     data() {
         return {
@@ -85,15 +86,8 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <div v-for="(comic, index) in Comix" :key="index" :image="comic.thumb" :title="comic.series"
-                    :price="comic.price" :type="comic.type" class="card">
-                    <img :src="comic.thumb" class="card-img-top" alt="card">
-                    <div class="card-body">
-                        <h3 class="card-text">{{ comic.series }}</h3>
-                        <h3 class="card-text">{{ comic.price }}</h3>
-                        <h5 class="card-text">{{ comic.type }}</h5>
-                    </div>
-                </div>
+                <AppComixList v-for="(comic, index) in Comix" :key="index" :image="comic.thumb" :title="comic.series"
+                    :price="comic.price" :type="comic.type" class="card" />
             </div>
             <div class="justify-center">
                 <button>
